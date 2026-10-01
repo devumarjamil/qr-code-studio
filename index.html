@@ -78,23 +78,6 @@
   </main>
   <footer><a class="brand" href="#top"><span class="brand-mark">⌁</span><span>QR AI <b>Studio</b></span></a><span>Made for links that deserve a little more.</span><span>© 2025 QR AI Studio</span></footer>
 
-  <script src="qrcode.js"></script>
-  <script>
-    (function () {
-      function startApp() {
-        if (typeof qrcode !== 'function') {
-          setTimeout(startApp, 50);
-          return;
-        }
-
-        const script = document.createElement('script');
-        script.src = 'app.js';
-        script.defer = true;
-        document.body.appendChild(script);
-      }
-
-      startApp();
-    })();
-  </script>
+  <script src="qrcode.js"></script><script>window.QR_LIBRARY_READY=typeof qrcode==='function';</script><script src="app.js"></script>
 </body>
 </html>
